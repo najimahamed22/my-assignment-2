@@ -223,7 +223,7 @@ nav ul li a {
     font-weight: 700;
     font-size: 45px;
     text-align: center;
-    margin: 50px;
+    padding: 50px;
 }
 
 .work-img {
@@ -261,7 +261,7 @@ nav ul li a {
 .sponspors-description {
     font-weight: 400;
     font-size: 12px;
-    margin: 20px 250px;
+    padding: 20px 250px;
 }
 
 .sponspors-com {
@@ -286,4 +286,172 @@ footer {
     margin-bottom: 60px;
     margin: 70px;
     font-weight: 400;
+}
+
+/* resposive design */
+
+@media only screen and (max-width:576px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* header Responsive */
+    .nav-architects {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .arc-title {
+        font-size: 20px;
+    }
+
+    .arc-description {
+        font-size: 10px;
+    }
+
+    .main-btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    /* Main Tag Responsive */
+    .team-container {
+        display: block;
+    }
+
+    .team-group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .team-title {
+        text-align: center;
+    }
+
+    .team-description {
+        font-size: 10px;
+    }
+
+    .team-list .main-btn {
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    /* <!-- Features of love & enjoy Responsive--> */
+    .features-contanier {
+        display: block;
+        padding: 20px;
+        gap: 30px;
+
+    }
+
+    .features-group {
+        width: 100%;
+    }
+
+    .features-architects {
+        margin-top: 50px;
+    }
+
+    .features-title {
+        font-size: 17px;
+        font-weight: 700;
+        padding-left: 8px;
+    }
+
+    .features-description,
+    .sub-features-description {
+        font-size: 8px;
+    }
+
+    .sub-features-group {
+        margin-top: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .sub-features-title {
+        font-size: 15px;
+    }
+
+    .sub-btn {
+        font-size: 8px;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 140px;
+        border-radius: 10px;
+    }
+
+    #year-10 {
+        font-size: 20px;
+    }
+
+    /* <!-- Some Facts Responsive --> */
+    .fact-title,
+    .work-title {
+        font-size: 35px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .fact-description {
+        font-size: 12px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+        margin-left: 30px;
+    }
+
+    .some-facts {
+        font-size: 13px;
+        padding: 5px;
+        width: 130px;
+    }
+
+    /* <!-- Our Work Responsive --> */
+    .work-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 50px;
+        margin: 0;
+        width: 75%;
+
+    }
+
+    .sponspors-description {
+        font-size: 10px;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .sponspors-com {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px;
+        padding-top: 70px;
+        margin: 0;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 60px;
+        margin: 70px;
+        font-size: 10px;
+    }
 }
